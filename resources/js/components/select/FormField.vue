@@ -88,7 +88,7 @@ export default {
 
   watch: {
     value(value) {
-      this.$emit('value', value)
+      this.$emit('input', value)
     }
   },
 

@@ -60,11 +60,11 @@ Nova.booting((Vue, router) => {
   /** Select */
   Vue.component(
     'index-nova-fields-select',
-    require('./components/text/IndexField')
+    require('./components/select/IndexField')
   )
   Vue.component(
     'detail-nova-fields-select',
-    require('./components/text/DetailField')
+    require('./components/select/DetailField')
   )
   Vue.component(
     'form-nova-fields-select',
@@ -124,5 +124,19 @@ Nova.booting((Vue, router) => {
   Vue.component(
     'form-nova-fields-belongs-to',
     require('./components/belongs-to/FormField')
+  )
+
+  /** HasOne **/
+  Vue.component(
+      'index-nova-fields-has-one',
+      require('./components/has-one/IndexField')
+  )
+  Vue.component(
+      'detail-nova-fields-has-one',
+      require('./components/has-one/DetailField')
+  )
+  Vue.component(
+      'form-nova-fields-has-one',
+      require('./components/has-one/FormField')
   )
 })
