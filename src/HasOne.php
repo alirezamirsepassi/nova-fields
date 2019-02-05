@@ -101,6 +101,10 @@ class HasOne extends Field
         });
 
         $this->withMeta(['fields' => $fields]);
+        $this->showOnIndex = false;
+        $this->showOnCreation = true;
+        $this->showOnUpdate = true;
+        $this->showOnDetail = true;
 
         parent::resolve($resource, $attribute);
     }
